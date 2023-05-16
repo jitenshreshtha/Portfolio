@@ -1,19 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="flex justify-between h-20 bg-slate-600 items-center">
+    <div className="flex justify-between h-20  items-center font-roboto">
       <div className="">
-        <h1 className="font-extrabold">Jiten</h1>
+        <Link to="/">
+          <h1 className="font-extrabold text-2xl ml-20 hover:text-gray-500">
+            Jiten
+          </h1>
+        </Link>
       </div>
       <div>
-        <ul className="flex gap-8">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact me</li>
+        <ul className="flex gap-8 mr-10 text">
+          <Link>
+            <li className="hover:text-gray-500">Home</li>
+          </Link>
+          <Link>
+            <li className="hover:text-gray-500">About</li>
+          </Link>
+          <Link>
+            <li className="hover:text-gray-500">Skills</li>
+          </Link>
+          <Link>
+            <li className="hover:text-gray-500">Services</li>
+          </Link>
+          <Link>
+            <li className="hover:text-gray-500">Portfolio</li>
+          </Link>
+          <Link>
+            <li className="hover:text-gray-500">Contact me</li>
+          </Link>
         </ul>
       </div>
     </div>
