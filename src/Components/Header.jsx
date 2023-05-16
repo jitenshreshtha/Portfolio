@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Content from "./Content";
+import About from "./About";
 
 function Header() {
   return (
-    <div className="flex justify-between h-20  items-center font-roboto">
+    <div>
+    <div className="flex justify-between h-20  items-center font-roboto sticky top-0 bg-white">
       <div className="">
         <Link to="/">
           <h1 className="font-extrabold text-2xl ml-20 hover:text-gray-500">
@@ -33,6 +36,9 @@ function Header() {
           </Link>
         </ul>
       </div>
+    </div>
+    <Content />
+    <About />
     </div>
   );
 }
