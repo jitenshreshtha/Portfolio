@@ -4,6 +4,7 @@ import Content from "./Content";
 import About from "./About";
 import Skills from "./Skills";
 import Qualification from "./Qualification";
+import Contact from "./Contact";
 
 function Header() {
   return (
@@ -43,6 +44,7 @@ function Header() {
     <About />
     <Skills />
     <Qualification />
+    <Contact />
     </div>
   );
 }
