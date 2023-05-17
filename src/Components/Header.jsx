@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Content from "./Content";
 import About from "./About";
 import Skills from "./Skills";
+import Qualification from "./Qualification";
 
 function Header() {
   return (
@@ -41,6 +42,7 @@ function Header() {
     <Content />
     <About />
     <Skills />
+    <Qualification />
     </div>
   );
 }
